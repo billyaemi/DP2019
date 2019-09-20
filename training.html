@@ -82,11 +82,119 @@
         <i>이탤릭체</i>
 
         <!-- ins 첨부글, del 삭제글 <> u, strike-->
-        <ins>첨부하는 내용</ins>ㄴ
+        <ins>첨부하는 내용</ins>
         <del>쓸데없는 내용. 변경되어 삭제될 내용</del>
 
         <u>밑줄</u>
         <strike>중간줄</strike>
+
+        <!-- sup 윗첨자, sub 아랫첨자-->
+        2<sup>2</sup> : 제곱수, 2의 2승
+        H<sub>2</sub>O : 물의 화학식
+
+        <img src="images/__5_Young_Puppies_copy_2.jpg" width="100px"/>
+        <img src="./images/__5_Young_Puppies_copy_2.jpg" height="100px"/>
+
+        <style>
+            table, tr, td{
+                border: solid 1px black;
+            }
+        </style>
+        <!-- table 도표 -->
+        <!-- table, tr 한줄, td 한칸 -->
+        <!-- summary 요약, caption 표제 -->
+        <table summary="표의요약, 학생명단">
+            <caption>[표1] 표의제목</caption>
+            <!-- thead, tbody, tfoot-->
+            <thead>
+                <tr>
+                    <!-- scope = co1, row -->
+                    <th scope="col">제목1</th>
+                    <th scope="col">제목2</th>
+                    <th scope="col">제목3</th>
+                    <th scope="col">제목4</th>
+                    <th scope="col">제목5</th>
+                </tr>
+            </thead>
+            <tr>
+                <!-- colspan 열늘이기 - 가로로 늘림, rowspan 행늘이기 - 세로로 늘림-->
+                <td colspan="2">1</td> <!-- 가로로 두칸 차지함 -->
+                <td rowspan="2">2</td> <!-- 세로로 두칸 차지함 -->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+        <br /><table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <br /><table>
+            <tr>
+                <td colspan="6">up</td>
+                <td colspan="2", rowspan="2">right</td>
+            </tr>
+            <tr>
+                <td colspan="2", rowspan="2">left</td>
+                <td colspan="4">center</td>
+            </tr>
+            <tr>
+                <td colspan="7">down</td>
+            </tr>
+        </table>
+
+        <form>
+            <input type="text" placeholder="아이디를 입력하세요." />
+            <input type="password" placeholder="패스워드를 입력하세요." />
+
+            <input type="radio" name="bt1"/>
+            <input type="radio" name="bt1" />
+            <input type="radio" name="bt1" />
+            <!-- name이 동일해야함 -->
+            <input type="radio" name="bt2"/>
+            <input type="radio" name="bt2" />
+            <input type="radio" name="bt2" />
+
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+
+            <select>
+                <option>짜장면</option>
+                <option>짬뽕</option>
+            </select>
+
+            <!-- 가로 3글자, 세로 5줄 정도의 크기 -->
+            <textarea col="3" raw="5"></textarea>
+
+            <input type="button" value="버튼이름" />
+            <input type="button" value="테스트버튼" onclick="alert('테스트 버튼이 눌렸습니다.')" />
+
+            <input type="submit" value="제출" />
+
+        </form>
+
 
     </body>
 </html>
