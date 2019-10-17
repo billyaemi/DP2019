@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {margin: 0; font-family: 'DX 고딕 20', 'Apple SD Gothic Neo', sans-serif;}
+
+.site h1 a {color: #000000; text-decoration: none}
+
+.site h1 {margin: 0; font-size: 30px}
+
+.site img {border: none;}
+
+.menu ul {margin: 0; padding: 0; list-style: none}
+
+.menu li a {display: block; padding: 10px 15px; color: #000000; font-size: 14px; text-decoration: none;}
+
+.menu li a:hover {background-color: #eeeeee;}
+.menu ul:after {content: ""; display: block; clear: both;}
+.menu li {float: left; width: auto;}
+
+.topimg {max-width: 100%; height: auto; vertical-align: bottom;}
+
+
+.summary a {display: block; text-decoration: none; text-align: center; color: #000000}
+.summary h4 {margin-top: 0; margin-bottom: 0; font-size: 15px;}
+
+.story h1 {margin-top: 0; margin-bottom: 20px; font-size: 36px;}
+.story p {margin-top: 0; margin-bottom: 20px;}
+
+.follow ul {margin: 0; padding: 0; list-style: none;}
+.follow li a {display: block; margin-bottom: 0px; padding: 10px; color: #ffffff; font-size: 14px; text-decoration: none;}
+.follow li a:hover {opacity: 0.5;}
+
+.follow-tw {background-color: #63bafb; text-align: center; font-size: 10px;}
+.follow-fb {background-color: #5288f7; text-align: center; font-size: 10px;}
+.follow-ins {background-color: darkorchid; text-align: center; font-size: 10px;}
+.follow-tb {background-color: #0d1b3b; text-align: center; font-size: 10px;}
+
+.follow i {margin-right: 10px; font-size: 15px; vertical-align: middle;}
+
+.copyright p {margin: 0; color: #666666; font-size: 10px;}
+.boxA, .box4, .box5, .box8 {padding-left: 15px; padding-right: 15px;}
+.box5 {padding-top: 15px; padding-bottom: 15px; background-color: #dddddd;}
+
+.boxA {padding-top: 20px; padding-bottom: 20px;}
+.box4 {padding-top: 150px; padding-bottom: 190px;}
+.box8 {padding-top: 20px; padding-bottom: 20px;}
+
+.boxB {padding-top: 30px; padding-bottom: 100px;}
+
+.relation ul {margin: 0; padding: 0; list-style: none}
+.relation li a {display: block; padding: 50px; color: #000000; font-size: 10px; text-decoration: none}
+.relation li a:hover {background-color: #eeeeee;}
+.relation ul:after {content: ""; display: block; clear: both;}
+.relation li {float: left; width: auto;}
+
+@media (min-width: 768px) {
+
+.boxA:after {content: ""; display: block; clear: both}
+.box1 {float: left; width: auto;}
+.box2 {float: right; width: auto;}
+.box4 {text-align: center; text-align: right;}
+.box3 .box4 .box8 .boxA-inner .box5-inner {width: 1140px; margin-left: auto; margin-right: auto;}
+.boxA {margin-bottom: 20px; border-bottom: solid 1px #dddddd;}
+.box6:after {content: ""; display: block; clear: both;}
+.box7:after {content: ""; display: block; clear: both;}
+.box7-1 {float: left; width: 33.3333%;}
+.box7-2 {float: left; width: 33.3333%;}
+.box7-3 {float: left; width: 33.3333%;}
+
+
+
+}
