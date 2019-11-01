@@ -10,6 +10,12 @@
                 /* border: solid 1px black; */
                 /* 경계선: 실선 1픽셀두께 검은색; */
             }
+            header{
+                padding: 30px;
+            }
+            nav{
+                padding: 30px;
+            }
             h1{
                 margin: 0px;
             }
@@ -80,6 +86,25 @@
             }
             .container dd{
                 margin: 0px; /* 바깥여백: 없음 */
+            }
+            footer li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+            }
+            footer{
+                background-color: #999;
+                padding: 30px;
+            }
+            #wrap{
+                /* width: 1100px; 고정값 */
+                min-width: 1100px; /* 최소 넓이 */
+                max-width: 1920px; /* 최대 넓이 */
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
     </head>
@@ -245,7 +270,34 @@
                 </section>
             </div>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div class="float_left">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact us</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                    <div>
+                        the loges in the design are the property
+                        of their respective owners/copyright holders.
+                    </div>
+                </div>
+                <ul class="float_right">
+                    <li><img src="images/layout1_footer_icon1.png"/></li>
+                    <li><img src="images/layout1_footer_icon2.png"/></li>
+                    <li><img src="images/layout1_footer_icon3.png"/></li>
+                    <li><img src="images/layout1_footer_icon4.png"/></li>
+                    <li><img src="images/layout1_footer_icon5.png"/></li>
+                    <li><img src="images/layout1_footer_icon6.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
         </div>
     </body>
 </html>
