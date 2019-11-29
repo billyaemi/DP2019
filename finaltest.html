@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Test</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style2.css"></link>
+        <style>
+            header{
+                background-color: #000000;
+                padding: 10px 50px;
+                color: #e92a2d;
+                font-size: 15px;
+            }
+            body{
+                background-image: url("images2/backgroundcolor.jpg")
+            }
+            nav>ul{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 35px 10px;
+            }
+            header>h1{
+                margin: 0px;
+            }
+            #main_visual{
+                background-image: url("images2/strangerthings_wallpaper2.jpg");
+                background-size: 100% auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+
+                color: #e92a2d;
+                text-align: center;
+                padding: 100px 0px;
+            }
+            #main_visual h2{
+                margin: 0px;
+            }
+            #visual_title_top{
+                letter-spacing: 5px;
+                font-size: 15px;
+                padding: 120px 0px 0px 0px;
+            }
+            #visual_title_bottom{
+                font-size: 15px;
+            }
+            #main_visual img{
+                margin: 30px 0px 170px 0px;
+            }
+            .float_left { float: left; }
+            .float_right { float: right; }
+            .clear { clear: both; height: 0; overflow: hidden; }
+            #wrap{
+                min-width: 900px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            section{
+                text-align: center;
+                /* padding: 0px 100px; 상하 좌우 */
+            }
+            section h3{
+                color: #e92a2d;
+                font-size: 30px;
+                font-weight: normal;
+                margin: 80px 0px; /* 상하 좌우 */
+            }
+            section p{
+                margin: 30px 0px;
+                padding: 0px 400px;
+                color: #e92a2d;
+            }
+            section #about_list{
+                padding: 0px 100px;
+            }
+            section dd{
+                margin: 0px;
+            }
+            section ul{
+                padding: 0px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 300px; /* 고정값 */
+                width: 25%; /* 가변값 */
+                width: calc(25% - (1px /4 * 3) - 40px - 40px);
+                list-style: none;
+
+                border-right: solid 1px #ccc;
+                padding: 40px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            #work_list li{
+                float: left;
+                list-style: none;
+                width: 25%;
+            }
+            #work_list{
+                padding: 0px;
+            }
+            #work_list img{
+                width: 100%;
+                display: block;
+            }
+            .space{
+                height: 200px;
+            }
+            section>#target{
+                padding: 100px 0px 100px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <img src="images2/stranger.jpg"/>
+                </h1>
+                <nav class="float_right">
+                <ul>
+                    <li>ABOUT</li>
+                    <li>SEASONS</li>
+                    <li>CHARACTERS</li>
+                    <li>CLIPS</li>
+                    <div class="clear"></div>
+                </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="visual_title_top">A NETFLIX ORIGINAL SERIES</div>
+                <h2><img src="images2/strangerthingslogo2.png"/></h2>
+                <div class="space">
+                    <a href="#target"><img src="images/layout2_button.jpg"/></a>
+                </div>
+            </div>
+            <section>
+                <div id="target">
+                <h3>ABOUT STRANGER THINGS</h3>
+                <P>
+                    영어 원제 Stranger Things는 매우 이상한 알 수 없는 것들을 의미하나,
+                    국내에 먼저 알려진 동명의 일본 드라마때문에 기묘한 이야기로 번역해 배급 되었다.
+                </P>
+                <P>
+                    80년대 미국, 인디애나주의 작은 마을에서 행방불명된 소년.
+                    이와 함께 미스터리한 힘을 가진 소녀가 나타나고, 마을에는 초자연 현상들이 일어나기 시작한다. 정부의 일급비밀 실험의 실체와 무시무시한 기묘한 현상들에 맞선다.
+                </P>
+                <P>
+                    2016년 7월 15일 첫번째 시즌이 공개되며 많은 호평을 받았고, 2017년 10월 27일 시즌 2가 공개되었으며. 시즌 3은 2019년 7월 4일 공개되었다.
+                    시즌4 역시 확정되었고 무대는 호킨스를 벗어난다.
+                </P>
+                </div>
+                <ul id="about_list">
+                    <li>
+                        <img src="images/layout2_icon1.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/layout2_icon2.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/layout2_icon3.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/layout2_icon4.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section>
+                <h3>MY WORK</h3>
+                <P>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna 
+                </P>
+                <ul id="work_list">
+                    <li><img src="images/layout2_pic1.jpg"/></li>
+                    <li><img src="images/layout2_pic2.jpg"/></li>
+                    <li><img src="images/layout2_pic3.jpg"/></li>
+                    <li><img src="images/layout2_pic4.jpg"/></li>
+                    <li><img src="images/layout2_pic5.jpg"/></li>
+                    <li><img src="images/layout2_pic6.jpg"/></li>
+                    <li><img src="images/layout2_pic7.jpg"/></li>
+                    <li><img src="images/layout2_pic8.jpg"/></li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>
