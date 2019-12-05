@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Test2</title>
+        <meta charset="utf-8"/>
+        <style>
+            body {margin: 0; font-family: 'DX 고딕 20', 'Apple SD Gothic Neo', sans-serif;}
+            header{
+                background-color: #000000;
+                padding: 10px 50px;
+                color: #e92a2d;
+                font-size: 15px;
+            }
+            body{
+                background-image: url("images2/backgroundcolor.jpg")
+            }
+            nav>ul{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 9px;
+                padding-right: 9px;
+                color: #000000;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 35px 10px;
+            }
+            header>h1{
+                margin: 0px;
+            }
+            #zoom{
+                margin: 20px;
+            }
+            header>ul>li>li:nth-child(5){
+                border: none;
+            }
+            .clear{ clear: both; height: 0; overflow: hidden; }
+            .float_left{ float: left; font-size: 20px}
+            .float_right{
+                float: right;
+                font-size: 10px;
+                font-weight: bold;
+                padding-left: 9px;
+                padding-right: 60px;
+                padding-top: 12px;
+                padding-bottom: 10px;
+            }
+            .float_footer{float: right; padding-right: 20px;}
+            .float_right a{
+                text-decoration: none;   
+                color: black;
+            }
+            .float_right a:hover{
+                opacity: 0.4;
+            }
+            nav>ul{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav{
+                background-color: #e92a2d;
+            }
+            nav#fix{
+                position: fixed;
+                padding: 15px 10px 15px 10px;
+                opacity: 0.7;
+            }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                text-decoration: none;
+            }
+            nav>h2{
+                color: #000000;
+                padding: 0px 0px 0px 50px;
+                font-weight: lighter;
+                font-size: 20px;
+            }
+            section img{
+                margin: 10px 0px;
+            }
+            .float_change a{display: block; text-decoration: none; color: black; font-size: 10px; font-weight: bold;}
+            .float_change li{list-style: none; padding: 5px 5px;}
+            .float_change a:hover{opacity: 0.5;}
+            .container { background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+            .container:nth-child(1){background-image: url("images2/back_season1.jpg");}
+            .container:nth-child(2){background-image: url("images2/back_season2.jpg");}
+            .container:nth-child(3){background-image: url("images2/back_season3.jpg");}
+            .container:nth-child(4){background-image: url("images2/back_season4.jpg");}
+            .content_part{
+                margin: 0px 0px 0px 0px;
+                width: 1000px;
+            }
+            .container>section{
+                /* margin-left: 180px */
+                width: 1000px;
+                margin-left: auto; /* 바깥여백-왼쪽: 자동 */
+                margin-right: auto;
+            }
+            .container>section>h3{
+                color: #e92a2d;
+                font-weight: lighter;
+                font-size: 40px;
+                padding: 30px 0px 20px 20px;
+            }
+            .container dt{
+                color: #e92a2d;
+                font-weight: bold;
+                font-size: 25px;
+                margin-top: 15px;
+                margin: 5px 0px 5px 0px; /* 상 우 하 좌(위에서부터 시계방향) */
+            }
+            .container dd{
+                text-align: auto;
+                margin: 10px 0px 150px 0px;
+                color: #e92a2d;
+            }
+            footer li a{list-style: none; text-decoration: none; color: black;}
+            footer li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            footer{
+                background-color: #e92a2d;
+                padding: 30px 0px 0px 30px;
+                width: auto;
+            }
+            footer div{
+                font-size: 13px;
+                font-weight: bold;
+            }
+            #wrap{
+                min-width: 900px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .menu {background-color: black;}
+            .menu ul {margin: 0; padding: 0; list-style: none}
+            .menu li a {display: block; padding: 10px 15px; color: #e92a2d; font-size: 14px; text-decoration: none;}
+            .menu li a:hover {background-color: #161616;}
+            .menu ul:after {content: ""; display: block; clear: both;}
+            .menu li {float: left; width: auto;}
+            .box2 {float: right; width: auto; padding: 30px 0px 0px 0px;}
+            .box3 {float: right; width: 0px; padding: 0px 0px;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <a href="finaltest_index.html"><img src="images2/stranger.jpg"/></a>
+                </h1>
+                <div class="box2">
+                    <nav class="menu">
+                    <ul>
+                        <li><a href="finaltest.html">About</a></li>
+                        <li><a href="finaltest_2.html">Seasons</a></li>
+                        <li><a href="finaltest_3.html">Behinds</a></li>
+                        <li><a href="finaltest_4.html">Layout1</a></li>
+                        <li><a href="finaltest_5.html">Layout2</a></li>
+                        <li><a href="finaltest_6.html">Layout3</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="clear"></div>
+            </header>
+            <nav>
+                <h2 class="float_left">
+                    Series
+                </h2>
+                <ul class="float_right">
+                    <li><a href="#target">SEASON 1</a></li>
+                    <li><a href="#target2">SEASON 2</a></li>
+                    <li><a href="#target3">SEASON 3</a></li>
+                    <li><a href="#target4">SEASON 4</a></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+            
+            <div>
+            <div class="container">
+                <div id="target"></div>
+                <section>
+                    <div class="clear"></div>
+                    <h3>SEASON 1</h3>
+                    <div class="content_part">
+                        <div class="box3">
+                            <nav id="fix">
+                                <div class="float_change">
+                                <li><a href="#target">SEASON 1</a></li>
+                                <li><a href="#target2">SEASON 2</a></li>
+                                <li><a href="#target3">SEASON 3</a></li>
+                                <li><a href="#target4">SEASON 4</a></li>
+                                </div>
+                            </nav>
+                            </div>
+                        <img src="images2/stranger1.gif" width="1000px"/>
+                        <img src="images2/stranger2.gif" width="1000px"/>
+                        <d1>
+                            <dt>기묘한 이야기 시즌1</dt>
+                            <dd>
+                                일레븐의 등장과 윌 바이어스의 실종
+                            </dd>
+                        </d1>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+            </div>
+            <div class="container">
+                <div id="target2"></div>
+                <section>
+                    <div class="clear"></div>
+                    <h3>SEASON 2</h3>
+                    <div class="content_part">
+                        <img src="images2/stranger4.gif" width="1000px"/>
+                        <img src="images2/stranger5.gif" width="1000px"/>
+                        <d1>
+                            <dt>기묘한 이야기 시즌2</dt>
+                            <dd>
+                                마인드 플레이어와 현자 윌, 그리고 밥
+                            </dd>
+                        </d1>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+            </div>
+            <div class="container">
+                <div id="target3"></div>
+                <section>
+                    <div class="clear"></div>
+                    <h3>SEASON 3</h3>
+                    <div class="content_part">
+                        <img src="images2/stranger7.gif" width="1000px"/>
+                        <img src="images2/stranger8.gif" width="1000px"/>
+                        <d1>
+                            <dt>기묘한 이야기 시즌3</dt>
+                            <dd>
+                                마인드 플레이어의 재등장과 추격
+                            </dd>
+                        </d1>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+            </div>
+            <div class="container">
+                <div id="target4"></div>
+                <section>
+                    <div class="clear"></div>
+                    <h3>SEASON 4</h3>
+                    <div class="content_part">
+                        <img src="images2/stranger10.gif" width="1000px"/>
+                        <d1>
+                            <dt>기묘한 이야기 시즌4</dt>
+                            <dd>
+                                기묘한 이야기 시즌4 확정, 2021년 개봉예정
+                            </dd>
+                        </d1>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+            </div>
+            <footer>
+                <div class="float_left">
+                    <ul>
+                        <li><a href="finaltest_index.html" target="_self">Home</a></li>
+                        <li><a href="finaltest.html" target="_self">About</a></li>
+                        <li><a href="finaltest_2.html" target="_self">Seasons</a></li>
+                        <li><a href="finaltest_3.html" target="_self">Behinds</a></li>
+                        <li><a href="finaltest_4.html" target="_self">Layouts</a></li>
+                        <li><a href="finaltest_5.html" target="_self">Layouts</a></li>
+                        <li><a href="finaltest_6.html" target="_self">Layouts</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2019 Won Hee Yun. All Right Reserved.</div>
+                    <div>
+                        the loges in the design are the property
+                        of their respective owners/copyright holders.
+                    </div>
+                </div>
+                <ul class="float_footer">
+                    <li><img src="images2/netflix-logo-0.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
+        </div>
+    </body>
+</html>

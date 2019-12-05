@@ -1,0 +1,37 @@
+/* === mian css === */
+body{
+    margin:0;
+    background:#000;
+   }
+   video{
+    position:fixed;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    min-height: 100%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    transform:translateX(-50%) translateY(-50%);
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    -moz-transform:translateX(-50%) translateY(-50%);
+    -o-transform:translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
+    -webkit-transition: 1s opacity;
+    -moz-transition: 1s opacity;
+    -o-transition: 1s opacity;
+   }
+   .stopfade{
+    opacity: .5;
+   }
+   /* === Media Query === */
+   @media screen and (max-width: 500px) {
+    div{width:70%;}
+   }
+   @media screen and (max-device-width: 800px) {
+    div{width:70%;}
+   }
+   @media screen and (max-device-width: 800px) {
+    #bgvid{display:none;}
+   }
+  

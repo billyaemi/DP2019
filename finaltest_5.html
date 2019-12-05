@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8" />
+        <style>
+            body{
+                margin: 0px;
+            }
+            .header1{
+                width: auto;
+                background-color: #000000;
+                padding: 10px 50px;
+                color: #e92a2d;
+                font-size: 15px;
+                position:sticky;
+                top:0px;
+                z-index: 1;
+            }
+            .header1>nav>ul{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .header1>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            .header1>ul{
+                padding: 0px;
+            }
+            .header1>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 35px 10px;
+            }
+            .header1>h1{
+                margin: 0px;
+            }
+            .header2{
+                background-color: #02918c;
+                color: white;
+                /* margin: 10px 50px; 상하 좌우 */
+                padding: 10px 50px; /* 상하 좌우 */
+            }
+            #logo_back{
+                color: #cfc91d;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            .float_left1 { float: left; }
+            .float_left { float: left; }
+            .float_right { float: right; }
+            .clear { clear: both; height: 0; overflow: hidden; }
+            header>h1{
+                margin: 0px;
+            }
+            #main_visual{
+                background-image: url("images/layout2_visual.jpg");
+                background-size: 100% auto; /* 가로 세로 */
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: white; /* 상속 */
+                text-align: center;
+                padding: 100px 0px; /* 상하 좌우 */
+            }
+            #main_visual h2{
+                font-size: 40px;
+                font-weight: normal;
+                letter-spacing: 15px;
+                margin: 5px;
+            }
+            #visual_title_top{
+                font-size: 20px;
+            }
+            #visual_title_bottom{
+                font-size: 15px;
+            }
+            #main_visual img{
+                margin: 100px 0px 0px 0px; /* 상 우 하 좌 (위부터 시계방향) */
+            }
+            section{
+                text-align: center;
+                /* padding: 0px 100px; 상하 좌우 */
+            }
+            section h3{
+                color: #02918c;
+                font-size: 30px;
+                font-weight: normal;
+                margin: 80px 0px; /* 상하 좌우 */
+            }
+            section p{
+                margin: 80px 0px;
+                padding: 0px 100px;
+            }
+            section #about_list{
+                padding: 0px 100px;
+            }
+            section dd{
+                margin: 0px;
+            }
+            section ul{
+                padding: 0px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 300px; /* 고정값 */
+                width: 25%; /* 가변값 */
+                width: calc(25% - (1px /4 * 3) - 40px - 40px);
+                list-style: none;
+
+                border-right: solid 1px #ccc;
+                padding: 40px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            .list_style{
+                list-style: none;
+            }
+            footer li a{list-style: none; text-decoration: none; color: black;}
+            footer li{
+                float: left;
+                list-style: none;
+                padding: 0px 20px;
+            }
+            footer ul{
+                padding: 0px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            footer{
+                background-color: #e92a2d;
+                padding: 30px 0px 0px 30px;
+            }
+            footer div{
+                font-size: 13px;
+                font-weight: bold;
+            }
+            #work_list li{
+                float: left;
+                list-style: none;
+                width: 25%;
+            }
+            #work_list{
+                padding: 0px;
+            }
+            #work_list img{
+                width: 100%;
+                display: block;
+            }
+            #wrap{
+                min-width: 900px; /* 웹페이지 적용 최소 크기 */
+                max-width: 1920px; /* 웹페이지 적용 최대 크기 */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .menu ul {margin: 0; padding: 0; list-style: none}
+            .menu li a {display: block; padding: 10px 15px; color: #e92a2d; font-size: 14px; text-decoration: none;}
+            .menu li a:hover {background-color: #161616;}
+            .menu ul:after {content: ""; display: block; clear: both;}
+            .menu li {float: left; width: auto; padding: 0px 9px;}
+            .box2 {float: right; width: auto; padding: 30px 0px 0px 0px;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header class="header1">
+                <h1 class="float_left1">
+                    <a href="finaltest_index.html"><img src="images2/stranger.jpg"/></a>
+                </h1>
+                <div class="box2">
+                    <nav class="menu">
+                    <ul>
+                    <li><a href="finaltest.html">About</a></li>
+                    <li><a href="finaltest_2.html">Seasons</a></li>
+                    <li><a href="finaltest_3.html">Behinds</a></li>
+                    <li><a href="finaltest_4.html">Layout1</a></li>
+                    <li><a href="finaltest_5.html">Layout2</a></li>
+                    <li><a href="finaltest_6.html">Layout3</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="clear"></div>
+            </header>
+            <header class="header2">
+                <h1 class="float_left">
+                    <span>MY</span>
+                    <span id="logo_back">FOLIO</span>
+                    <!-- div span 의미없이 구획나누기 좋음 -->
+                </h1>
+                <nav class="float_right">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>SERVICE</li>
+                    <li>MY WORKS</li>
+                    <li>CONTACT ME</li>
+                    <div class="clear"></div>
+                </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="visual_title_top">Lorem ipsum dolor sit iusmod tempor</div>
+                <h2>INCIDIDUNT BORE</h2>
+                <div id="visual_title_bottom">Orem ipsum dolor sit amet, consectetur</div>
+                <img src="images/layout2_button.jpg"/>
+            </div>
+            <section>
+                <h3>ABOUT ME</h3>
+                <P>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sedo eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat 
+                    duis aute irure dolor.
+                </P>
+                <ul id="about_list">
+                    <li>
+                        <img src="images/layout2_icon1.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/layout2_icon2.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/layout2_icon3.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/layout2_icon4.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit,
+                                sedo eiusmod tempor incididunt
+                                et dolorerserss eerhfre mag
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section>
+                <h3>MY WORK</h3>
+                <P>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna 
+                </P>
+                <ul id="work_list">
+                    <li><img src="images/layout2_pic1.jpg"/></li>
+                    <li><img src="images/layout2_pic2.jpg"/></li>
+                    <li><img src="images/layout2_pic3.jpg"/></li>
+                    <li><img src="images/layout2_pic4.jpg"/></li>
+                    <li><img src="images/layout2_pic5.jpg"/></li>
+                    <li><img src="images/layout2_pic6.jpg"/></li>
+                    <li><img src="images/layout2_pic7.jpg"/></li>
+                    <li><img src="images/layout2_pic8.jpg"/></li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <footer>
+                <div class="float_left">
+                    <ul>
+                        <li><a href="finaltest_index.html" target="_self">Home</a></li>
+                        <li><a href="finaltest.html" target="_self">About</a></li>
+                        <li><a href="finaltest_2.html" target="_self">Seasons</a></li>
+                        <li><a href="finaltest_3.html" target="_self">Behinds</a></li>
+                        <li><a href="finaltest_4.html" target="_self">Layout1</a></li>
+                        <li><a href="finaltest_5.html" target="_self">Layout2</a></li>
+                        <li><a href="finaltest_6.html" target="_self">Layout3</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2019 Won Hee Yun. All Right Reserved.</div>
+                    <div>
+                        the loges in the design are the property
+                        of their respective owners/copyright holders.
+                    </div>
+                </div>
+                <ul class="float_right">
+                    <li><img src="images2/netflix-logo-0.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
+        </div>
+    </body>
+</html>

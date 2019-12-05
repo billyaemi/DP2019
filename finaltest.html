@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style2.css"></link>
         <style>
+            body {margin: 0; font-family: 'DX 고딕 20', 'Apple SD Gothic Neo', sans-serif;}
             header{
                 background-color: #000000;
                 padding: 10px 50px;
@@ -74,19 +75,27 @@
             section h3{
                 color: #e92a2d;
                 font-size: 30px;
-                font-weight: normal;
-                margin: 80px 0px; /* 상하 좌우 */
+                font-weight: bold;
+                margin: 130px 0px 40px 0px; /* 상하 좌우 */
             }
             section p{
+                font-size: 16px;
                 margin: 30px 0px;
                 padding: 0px 400px;
                 color: #e92a2d;
             }
             section #about_list{
-                padding: 0px 100px;
+                padding: 0px 0px;
+            }
+            section dt{
+                font-size: 20px;
+                color: #e92a2d;
+                padding: 0px 0px 20px 0px;
             }
             section dd{
                 margin: 0px;
+                color: #e92a2d;
+                font-size: 10px;
             }
             section ul{
                 padding: 0px;
@@ -94,14 +103,14 @@
             section>#about_list>li{
                 float: left;
                 width: 300px; /* 고정값 */
-                width: 25%; /* 가변값 */
-                width: calc(25% - (1px /4 * 3) - 40px - 40px);
+                width: 20%; /* 가변값 */
+                width: calc(20% - (1px /5 * 4) - 40px - 40px);
                 list-style: none;
 
-                border-right: solid 1px #ccc;
+                border-right: solid 1px #e92a2d;
                 padding: 40px;
             }
-            section>#about_list>li:nth-child(4){
+            section>#about_list>li:nth-child(5){
                 border: none;
             }
             #work_list li{
@@ -119,93 +128,166 @@
             .space{
                 height: 200px;
             }
+            .space a:hover{
+                opacity: 0.5;
+            }
             section>#target{
                 padding: 100px 0px 100px 0px;
             }
+            .pic li a{
+                display: block;
+            }
+            .pic img{
+                -webkit-transform:scale(1);
+                -moz-transform:scale(1);
+                -ms-transform:scale(1); 
+                -o-transform:scale(1);  
+                transform:scale(1);
+                -webkit-transition:.3s;
+                -moz-transition:.3s;
+                -ms-transition:.3s;
+                -o-transition:.3s;
+                transition:.3s;
+            }
+            .pic li a:hover{
+                opacity: 0.5;
+                -webkit-transform:scale(1.1);
+                -moz-transform:scale(1.1);
+                -ms-transform:scale(1.1);   
+                -o-transform:scale(1.1);
+                transform:scale(1.1);
+            }
+            #title_main{
+                padding: 0px 0px 80px 0px;
+            }
+            #stillcuts{
+                padding: 130px 0px 0px 0px;
+            }
+            .container>section{
+                /* margin-left: 180px */
+                width: 1000px;
+                height: 1000px;
+                margin-left: auto; /* 바깥여백-왼쪽: 자동 */
+                margin-right: auto;
+            }
+            .list_style{
+                list-style: none;
+            }
+            footer li a{list-style: none; text-decoration: none; color: black;}
+            footer li{
+                float: left;
+                list-style: none;
+                padding: 0px 20px;
+            }
+            footer ul{
+                padding: 0px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            footer{
+                background-color: #e92a2d;
+                padding: 30px 0px 0px 30px;
+            }
+            footer div{
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .menu ul {margin: 0; padding: 0; list-style: none}
+            .menu li a {display: block; padding: 10px 15px; color: #e92a2d; font-size: 14px; text-decoration: none;}
+            .menu li a:hover {background-color: #161616;}
+            .menu ul:after {content: ""; display: block; clear: both;}
+            .menu li {float: left; width: auto;}
+            .box2 {float: right; width: auto; padding: 30px 0px 0px 0px;}
         </style>
     </head>
     <body>
         <div id="wrap">
-            <header>
+            <header class="header2">
                 <h1 class="float_left">
-                    <img src="images2/stranger.jpg"/>
+                    <a href="finaltest_index.html"><img src="images2/stranger.jpg"/></a>
                 </h1>
-                <nav class="float_right">
-                <ul>
-                    <li>ABOUT</li>
-                    <li>SEASONS</li>
-                    <li>CHARACTERS</li>
-                    <li>CLIPS</li>
-                    <div class="clear"></div>
-                </ul>
-                </nav>
+                <div class="box2">
+                    <nav class="menu">
+                    <ul>
+                        <li><a href="finaltest.html">About</a></li>
+                        <li><a href="finaltest_2.html">Seasons</a></li>
+                        <li><a href="finaltest_3.html">Behinds</a></li>
+                        <li><a href="finaltest_4.html">Layout1</a></li>
+                        <li><a href="finaltest_5.html">Layout2</a></li>
+                        <li><a href="finaltest_6.html">Layout3</a></li>
+                    </ul>
+                    </nav>
+                </div>
                 <div class="clear"></div>
             </header>
             <div id="main_visual">
                 <div id="visual_title_top">A NETFLIX ORIGINAL SERIES</div>
                 <h2><img src="images2/strangerthingslogo2.png"/></h2>
                 <div class="space">
-                    <a href="#target"><img src="images/layout2_button.jpg"/></a>
+                    <a href="#target"><img src="images2/button15.png"/></a>
                 </div>
             </div>
             <section>
                 <div id="target">
                 <h3>ABOUT STRANGER THINGS</h3>
                 <P>
-                    영어 원제 Stranger Things는 매우 이상한 알 수 없는 것들을 의미하나,
-                    국내에 먼저 알려진 동명의 일본 드라마때문에 기묘한 이야기로 번역해 배급 되었다.
-                </P>
-                <P>
                     80년대 미국, 인디애나주의 작은 마을에서 행방불명된 소년.
-                    이와 함께 미스터리한 힘을 가진 소녀가 나타나고, 마을에는 초자연 현상들이 일어나기 시작한다. 정부의 일급비밀 실험의 실체와 무시무시한 기묘한 현상들에 맞선다.
+                    이와 함께 초능력을 가진 소녀가 나타나고, 마을에는 초자연 현상들이 일어나기 시작한다. 정부의 일급비밀 실험과 무시무시한 기묘한 현상들에 맞선다.
                 </P>
                 <P>
                     2016년 7월 15일 첫번째 시즌이 공개되며 많은 호평을 받았고, 2017년 10월 27일 시즌 2가 공개되었으며. 시즌 3은 2019년 7월 4일 공개되었다.
                     시즌4 역시 확정되었고 무대는 호킨스를 벗어난다.
                 </P>
                 </div>
+                <div id="title_main">
+                    <h3>Main Characters</h3>
+                </div>
                 <ul id="about_list">
                     <li>
-                        <img src="images/layout2_icon1.jpg"/>
+                        <img src="images2/Mike.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Mike Wheeler</dt>
                             <dd>
-                                onsectetur adipisicing elit,
-                                sedo eiusmod tempor incididunt
-                                et dolorerserss eerhfre mag
+                                시즌1의 실질적인 주인공으로
+                                자기 집 지하실에서 친구들과 TRPG를 즐기는 그 나이 또래의 평범한 소년.
                             </dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="images/layout2_icon2.jpg"/>
+                        <img src="images2/Eleven.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Eleven</dt>
                             <dd>
-                                onsectetur adipisicing elit,
-                                sedo eiusmod tempor incididunt
-                                et dolorerserss eerhfre mag
+                                서클 멤버들은 줄여서 엘(El)이라고 부른다.
+                                강한 염력을 사용하는데, 능력을 쓰면 코피를 흘린다.
                             </dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="images/layout2_icon3.jpg"/>
+                        <img src="images2/Dustin.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Dustin Henderson</dt>
                             <dd>
-                                onsectetur adipisicing elit,
-                                sedo eiusmod tempor incididunt
-                                et dolorerserss eerhfre mag
+                                다른 멤버들에 비해서 과학 지식도 많고, 발음이 새는 것이 매력. 말발이 상당하다.
                             </dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="images/layout2_icon4.jpg"/>
+                        <img src="images2/Lucas.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Lucas Sinclair</dt>
                             <dd>
-                                onsectetur adipisicing elit,
-                                sedo eiusmod tempor incididunt
-                                et dolorerserss eerhfre mag
+                                마이크의 가장 오래된 친구이자 서클 멤버로 마이크의 옆집에 산다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images2/Will.png"/>
+                        <dl>
+                            <dt>Will Byers</dt>
+                            <dd>
+                                내성적이고 굉장히 착한 성격으로 친구들을 잘 배려하고
+                                친구와 함께 노는 것을 제일 좋아하는 그 나이 또래의 평범한 아이.
                             </dd>
                         </dl>
                     </li>
@@ -213,25 +295,56 @@
                 </ul>
             </section>
             <section>
-                <h3>MY WORK</h3>
+                <h3 id="stillcuts">Still Cuts</h3>
                 <P>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt
-                    ut labore et dolore magna 
+                    각 시즌의 다양한 장면들을 사진으로 먼저 만나보세요.
                 </P>
                 <ul id="work_list">
-                    <li><img src="images/layout2_pic1.jpg"/></li>
-                    <li><img src="images/layout2_pic2.jpg"/></li>
-                    <li><img src="images/layout2_pic3.jpg"/></li>
-                    <li><img src="images/layout2_pic4.jpg"/></li>
-                    <li><img src="images/layout2_pic5.jpg"/></li>
-                    <li><img src="images/layout2_pic6.jpg"/></li>
-                    <li><img src="images/layout2_pic7.jpg"/></li>
-                    <li><img src="images/layout2_pic8.jpg"/></li>
+                    <div class="pic">
+                    <li><a href="#"><img src="images2/still1.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still7.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still3.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still5.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still2.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still6.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still8.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still4.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still14.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still11.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still9.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still15.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still10.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still12.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still16.jpg"/></a></li>
+                    <li><a href="#"><img src="images2/still13.jpg"/></a></li>
+                    </div>
                     <div class="clear"></div>
                 </ul>
             </section>
+            <footer>
+                <div class="float_left">
+                    <ul>
+                        <li><a href="finaltest_index.html" target="_self">Home</a></li>
+                        <li><a href="finaltest.html" target="_self">About</a></li>
+                        <li><a href="finaltest_2.html" target="_self">Seasons</a></li>
+                        <li><a href="finaltest_3.html" target="_self">Behinds</a></li>
+                        <li><a href="finaltest_4.html" target="_self">Layout1</a></li>
+                        <li><a href="finaltest_5.html" target="_self">Layout2</a></li>
+                        <li><a href="finaltest_6.html" target="_self">Layout3</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2019 Won Hee Yun. All Right Reserved.</div>
+                    <div>
+                        the loges in the design are the property
+                        of their respective owners/copyright holders.
+                    </div>
+                </div>
+                <ul class="float_right">
+                    <li><img src="images2/netflix-logo-0.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
         </div>
     </body>
 </html>
